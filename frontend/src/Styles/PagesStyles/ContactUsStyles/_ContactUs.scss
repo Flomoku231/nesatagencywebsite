@@ -1,0 +1,121 @@
+@import "../_Variables";
+
+
+
+.ContactUs__Container{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+    .ContactUsClass{
+        background-image: url('/Image/IntroSliderImage1.jpg') ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 650px;
+        background-color: $blur--background-color;
+        background-blend-mode: soft-light;
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+    
+}
+.ContactUs__Content{
+    width: 100%;
+    padding: 4rem 0rem 0rem 0rem;
+
+    .ContactUsForm{
+        width: 50rem;
+        max-width: 60%;
+        max-height: 100rem;
+        border: 1.5px solid $brand-color;
+        border-radius: $primary--border-radius;
+        box-shadow: $primary--shadow;
+        padding: 0px 0px 40px 0px;
+        display: flex;
+        align-items: center;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .ContactFormHead{
+        width: 100%;
+        height: 5rem;
+        background-color: $brand-color;
+        font-family: $Header--fonts;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        color: $secondary--text-color;
+        font-size: 12px;
+        object-fit: cover;
+    }
+}
+.NameInput,.EmailInput{
+    height: 70px;
+    width:80% ;
+    margin: auto;
+    padding: 10px 0px 0px 0px;
+}
+.MessageInput{
+    width: 80%;
+}
+textarea{
+    height: 7rem;
+}
+#nameLabel,#emailLabel,#messageLabel{
+    font-size: 22px;
+    font-family: $Paragraph--fonts;
+    color:  $secondary--brand-color;
+    cursor: pointer;
+}
+#Name,#Email,#MessageID{
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: $Paragraph--fonts !important;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $primary--text-color;
+    outline: none;
+}
+
+
+#Contact--btn{
+    width: 50%;
+    margin-top: 20px;
+    padding: 0.8rem 1.5rem;
+    font-size: 22px;
+}
+
+
+// Making This Page Responsive
+@media all and (max-width: 500px){
+    .ContactUs__Content .ContactUsForm {
+        max-width: 85%;
+        gap: 1rem;
+    }
+    #Name, #Email, #MessageID {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .ContactUs__Container .ContactUsClass {
+        height: 500px;
+    }
+    .NameInput, .EmailInput {
+        height: 70px;
+    }
+    #nameLabel, #emailLabel, #messageLabel {
+        font-size: 17px;
+    }
+    #Contact--btn {
+        width: 60%;
+        font-size: 20px;
+    }
+    .ContactUs__Content .ContactFormHead {
+        height: 3rem;
+    }
+}

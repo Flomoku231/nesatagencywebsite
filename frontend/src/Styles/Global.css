@@ -1,0 +1,1257 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Edu+TAS+Beginner:wght@500&family=Inter&family=Poppins:wght@700&family=Rubik+Moonrocks&display=swap");
+.button {
+  font-family: "Poppins";
+  font-weight: 400;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  outline: 0px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.primary-styles {
+  background-color: #f9240c;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Poppins";
+  cursor: pointer;
+  outline: 0px;
+  border: 0px;
+}
+
+.secondary-styles {
+  background-color: rgb(2, 2, 82);
+  border-radius: 8px;
+  outline: 0px;
+  border: 0px;
+  color: #ffffff;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+.large-size {
+  padding: 8px 30px;
+  font-size: 20px;
+}
+
+.medium-size {
+  padding: 6px 15px;
+  font-size: 18px;
+}
+
+.small-size {
+  padding: 4px 10px;
+  font-size: 16px;
+}
+
+@media all and (max-width: 600px) {
+  .large-size {
+    padding: 1px 10px;
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 500px) {
+  .large-size {
+    padding: 9px 10px;
+    font-size: 20px;
+  }
+}
+.Clickbtn {
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 400;
+  cursor: pointer;
+  padding: 10px 20px;
+  outline: 0px;
+  border: 0px;
+}
+
+.Clickbtn:hover {
+  background-color: rgb(2, 2, 82);
+}
+
+.primary--styles {
+  background-color: #f9240c;
+  color: #ffffff;
+  font-family: "Poppins";
+  cursor: pointer;
+  outline: 0px;
+  border: 0px;
+}
+
+.secondary--styles {
+  background-color: rgb(2, 2, 82);
+  outline: 0px;
+  border: 0px;
+  color: #ffffff;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+.large--sizes {
+  padding: 10px 50px;
+  font-size: 20px;
+}
+
+.medium--sizes {
+  padding: 6px 15px;
+  font-size: 18px;
+}
+
+.small--sizes {
+  padding: 4px 10px;
+  font-size: 16px;
+}
+
+@media all and (max-width: 400px) {
+  .large--sizes {
+    padding: 10px 26px;
+    font-size: 17px;
+  }
+}
+.ServicesCard__Content, #LandingPageServices__Route {
+  height: 100%;
+  width: 100%;
+}
+
+.Content__text {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#LandingPageServices__Route {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+#ServicesCard__Content-header {
+  font-size: 20px;
+  font-family: "Poppins";
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#ServicesCard__Content-paragraph {
+  font-size: 18px;
+  font-family: "Calibri";
+  line-height: 20px;
+}
+
+.Card__Container {
+  cursor: pointer;
+  max-width: 25%;
+  padding: 40px 20px;
+  height: 400px;
+  background-color: white;
+  box-shadow: rgba(206, 17, 17, 0.157) 0px 7px 29px 0px;
+}
+
+.Card__Container:hover #ImageID {
+  -webkit-animation: Bounce 1s forwards alternate;
+          animation: Bounce 1s forwards alternate;
+}
+
+@-webkit-keyframes Bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes Bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+#ImageID {
+  width: 80px;
+  height: 80px;
+}
+
+@media all and (max-width: 1000px) {
+  .Card__Container {
+    max-width: 28%;
+  }
+}
+@media all and (max-width: 900px) {
+  .Card__Container {
+    cursor: pointer;
+    max-width: 65%;
+    padding: 40px 20px;
+    height: 320px;
+  }
+}
+@media all and (max-width: 600px) {
+  .Card__Container {
+    height: 340px;
+  }
+}
+@media all and (max-width: 500px) {
+  .Card__Container {
+    padding: 8px 14px;
+  }
+}
+@media all and (max-width: 400px) {
+  .Card__Container {
+    max-width: 70%;
+  }
+  #ImageID {
+    width: 60px;
+    height: 70px;
+  }
+}
+@media all and (max-width: 350px) {
+  .Card__Container {
+    max-width: 80%;
+  }
+  #ServicesCard__Content-header {
+    font-size: 19px;
+    margin-top: 5px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.NavBar__Container {
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  padding: 15px 20px;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.NavBar__Container .MenuBarDisplay {
+  display: none;
+}
+.NavBar__Container .MenuButton {
+  width: 25px;
+  display: none;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+#Navar__logo {
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.Navbar__CompanyName {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 10px;
+  align-items: center;
+}
+
+#CompanyName__text {
+  font-size: 16px;
+  color: rgb(2, 2, 82);
+  font-family: "Poppins";
+}
+
+.NavBar__list {
+  justify-content: space-between;
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.NavBar__list > li, #AboutUsRoute, #ServicesRoute, #LogoRoute,
+#TrainingRoute, #BlogPostRoute, #ContactUsRoute, #HomeRoute, #FindJobsRoute {
+  list-style-type: none;
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+  font-family: "Poppins";
+  cursor: pointer;
+  color: rgb(2, 2, 82);
+}
+
+.NavBar__list > li:hover, #HomeRoute:hover, #AboutUsRoute:hover,
+#ServicesRoute:hover, #TrainingRoute:hover,
+#BlogPostRoute:hover, #ContactUsRoute:hover {
+  color: #f9240c;
+}
+
+@media all and (max-width: 1000px) {
+  .MenuBarDisplay {
+    display: block !important;
+  }
+  .MenuButton {
+    display: block !important;
+    width: 35px !important;
+  }
+  #AboutUsRoute, #ServicesRoute, #HomeRoute,
+#TrainingRoute, #BlogPostRoute, #ContactUsRoute, #FindJobsRoute {
+    display: none;
+  }
+  .Navbar__CompanyName {
+    width: 80%;
+    gap: 14px;
+  }
+  .NavBar__Container {
+    padding: 10px 30px;
+  }
+}
+@media all and (max-width: 600px) {
+  .Navbar__CompanyName {
+    width: 95%;
+    gap: 5px;
+  }
+  #CompanyName__text {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 500px) {
+  #CompanyName__text {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 400px) {
+  #CompanyName__text {
+    display: none;
+  }
+  #Navar__logo {
+    width: 115px;
+    height: 63px;
+  }
+}
+.ImagesCard__Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.ImagesCard__Container .right--image {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+#firstRight--image,
+#secondRight--image {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  -webkit-animation: BreathImage 3s ease-out infinite normal;
+          animation: BreathImage 3s ease-out infinite normal;
+}
+@-webkit-keyframes BreathImage {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes BreathImage {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+#leftImage {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.LandingPageIntro__Container {
+  width: 100%;
+  height: 650px;
+}
+
+.Intro__Slider1 {
+  background-image: url("/Image/IntroSliderImage1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.595);
+  background-blend-mode: soft-light;
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+}
+
+.Intro__Slider2 {
+  background-image: url("/Image/IntroSliderImage2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.595);
+  background-blend-mode: soft-light;
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+}
+
+.Intro__Slider3 {
+  background-image: url("/Image/IntroSliderImage3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.595);
+  background-blend-mode: soft-light;
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+}
+
+.IntroSlider__Content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  -webkit-animation: SlidesContent 2s ease-in;
+          animation: SlidesContent 2s ease-in;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@-webkit-keyframes SlidesContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes SlidesContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#Content__Head {
+  font-family: "sans-serif";
+  font-size: 30px;
+  color: #ffffff;
+  border-bottom: 4px solid #f9240c;
+}
+
+#Content__Bold {
+  font-family: "Poppins";
+  font-size: 55px;
+  color: #ffffff;
+  max-width: 70%;
+}
+
+@media all and (max-width: 900px) {
+  #Content__Bold {
+    font-size: 45px;
+    max-width: 75%;
+  }
+}
+@media all and (max-width: 600px) {
+  #Content__Bold {
+    font-size: 30px;
+    max-width: 77%;
+  }
+  #Content__Head {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 500px) {
+  #Content__Bold {
+    font-size: 23px;
+    max-width: 65%;
+  }
+  #Content__Head {
+    font-size: 22px;
+  }
+}
+@media all and (max-width: 400px) {
+  #Content__Bold {
+    font-size: 20px;
+    max-width: 70%;
+  }
+}
+.Services__Container {
+  margin: 20px 0px 0px 0px;
+  transform: translateY(-25%);
+  gap: 15px;
+  position: relative;
+  z-index: 200;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 1000px) {
+  .Services__Container {
+    transform: translateY(4%);
+  }
+}
+@media all and (max-width: 900px) {
+  .Services__Container {
+    height: 1050px;
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 600px) {
+  .Services__Container {
+    transform: translateY(2%);
+    gap: 24px;
+  }
+}
+.TeamCard__Container {
+  max-width: 85%;
+  height: 380px;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 0px 30px 0px;
+}
+.TeamCard__Container #TeamCard__image {
+  width: 100%;
+  height: 85% !important;
+  margin-bottom: 5px;
+}
+.TeamCard__Container #TeamCard__Name {
+  font-size: 22px;
+  font-family: "Poppins";
+  color: black !important;
+}
+.TeamCard__Container #TeamCard__Position {
+  font-size: 20px;
+  font-family: "Calibri";
+  color: black !important;
+}
+
+#TeamMember__id {
+  text-decoration: none !important;
+}
+
+@media all and (max-width: 900px) {
+  .TeamCard__Container {
+    height: 400px;
+  }
+  .TeamCard__Container #TeamCard__Name {
+    font-size: 20px;
+  }
+  .TeamCard__Container #TeamCard__Position {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 600px) {
+  .TeamCard__Container {
+    height: 400px;
+    max-width: 100%;
+  }
+}
+@media all and (max-width: 500px) {
+  .TeamCard__Container {
+    height: 400px;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+.LandingPageTeam__Container {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  margin: 60px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.LandingPageTeam__Container #TextContent__Head {
+  font-size: 25px;
+  color: #f9240c;
+}
+.LandingPageTeam__Container #TextContent__bold {
+  font-size: 30px;
+  font-family: "Poppins";
+  border-bottom: 4px solid rgb(2, 2, 82);
+  letter-spacing: 10px;
+}
+.LandingPageTeam__Container .SlidesClass {
+  width: 60%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media all and (max-width: 900px) {
+  .LandingPageTeam__Container .SlidesClass {
+    width: 80%;
+  }
+  .LandingPageTeam__Container {
+    height: 550px;
+  }
+}
+@media all and (max-width: 600px) {
+  .LandingPageTeam__Container {
+    height: 500px;
+  }
+  .LandingPageTeam__Container #TextContent__bold {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+}
+.TestimonialCard__Container {
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 4px 15px 4px;
+  max-height: 60%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: rgba(0, 0, 0, 0.595);
+}
+.TestimonialCard__Container .TestimonialCard__Content {
+  width: 100%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+}
+.TestimonialCard__Container .TestimonialCard__Content #TestimonialCard__Content-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.TestimonialCard__Container .TestimonialCard__Content .TestimonialCard__Content-text {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.TestimonialCard__Container .TestimonialCard__Content .TestimonialCard__Content-text #ParagraphText {
+  font-size: 18px;
+  font-family: "Calibri";
+  color: #ffffff;
+  margin: 8px;
+}
+.TestimonialCard__Container .TestimonialCard__Content .TestimonialCard__Content-text #NameText {
+  font-size: 22px;
+  font-family: "Poppins";
+  color: #f9240c;
+}
+.TestimonialCard__Container .TestimonialCard__Content .TestimonialCard__Content-text #PositionText {
+  font-size: 20px;
+  font-family: "sans-serif";
+  color: #ffffff;
+  margin-bottom: 15px !important;
+}
+
+@media all and (max-width: 900px) {
+  #ParagraphText {
+    font-size: 16px;
+  }
+  #NameText {
+    font-size: 18px;
+  }
+  #PositionText {
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 500px) {
+  .TestimonialCard__Container {
+    margin: auto;
+    width: 90%;
+  }
+}
+.Testimonial__Container {
+  width: 100%;
+  height: 580px;
+  margin-top: 70px;
+  padding-top: 20px;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.595);
+  background-image: url("/Image/IntroSliderImage1.jpg");
+  background-blend-mode: soft-light;
+}
+.Testimonial__Container #Testimonial__Head--text {
+  font-size: 25px;
+  font-family: "sans-serif";
+  color: #f9240c;
+}
+.Testimonial__Container #Testimonial__Bold--text {
+  font-size: 30px;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+
+.TestimonialsCards__slides {
+  width: 80%;
+  justify-content: center;
+  margin-top: 25px;
+  align-items: center;
+}
+
+@media all and (max-width: 900px) {
+  .TestimonialsCards__slides {
+    width: 86%;
+  }
+}
+@media all and (max-width: 750px) {
+  .Testimonial__Container {
+    margin-top: 70px;
+  }
+}
+@media all and (max-width: 500px) {
+  .Testimonial__Container {
+    height: 540px;
+    padding-top: 28px;
+  }
+  .Testimonial__Container #Testimonial__Bold--text {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 350px) {
+  .Testimonial__Container #Testimonial__Bold--text {
+    font-size: 20px;
+  }
+}
+.BlogCard__Container {
+  width: 100%;
+  cursor: pointer;
+  max-width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding: 15px;
+}
+.BlogCard__Container .BlogCard__Content, .BlogCard__Container #BlogImage {
+  width: 100%;
+}
+.BlogCard__Container .BlogCard__date {
+  width: 100%;
+  display: flex;
+  margin: 10px 0px 10px 0px;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.BlogCard__Container .BlogCard__date #date--image {
+  width: 8%;
+  height: 25px;
+}
+.BlogCard__Container .BlogCard__date #date--text {
+  font-family: "Calibri";
+  font-size: 18px;
+}
+.BlogCard__Container #text--head {
+  font-family: "Poppins";
+  font-size: 18px;
+}
+.BlogCard__Container #text--description {
+  font-family: "Calibri";
+  font-size: 17px;
+}
+
+.BlogCard__Container:hover {
+  -webkit-animation: BlogCardBreath 2s forwards;
+          animation: BlogCardBreath 2s forwards;
+}
+
+@-webkit-keyframes BlogCardBreath {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes BlogCardBreath {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@media all and (max-width: 750px) {
+  .BlogCard__Container {
+    max-width: 600px;
+  }
+  .BlogCard__date {
+    gap: 4px;
+  }
+}
+@media all and (max-width: 700px) {
+  .BlogCard__Container #text--head {
+    font-size: 14px;
+  }
+}
+.LandingPageBlog__Container {
+  width: 100%;
+  height: 610px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.LandingPageBlog__Container .LandingPageBlog__Head--Content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 35px;
+}
+.LandingPageBlog__Container .LandingPageBlog__Head--Content #Header--text {
+  font-size: 25px;
+  font-family: "sans-serif";
+  color: #f9240c;
+}
+.LandingPageBlog__Container .LandingPageBlog__Head--Content #Bold--text {
+  font-size: 30px;
+  font-family: "Poppins";
+}
+.LandingPageBlog__Container .MoreNews--button {
+  width: 40%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.LandingPageBlog__Cards {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: auto;
+}
+
+@media all and (max-width: 900px) {
+  .LandingPageBlog__Cards {
+    width: 90%;
+    gap: 15px;
+  }
+}
+@media all and (max-width: 750px) {
+  .LandingPageBlog__Container {
+    width: 100%;
+    height: 1850px;
+    margin-top: 25px;
+  }
+  .LandingPageBlog__Cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 600px) {
+  .LandingPageBlog__Container {
+    height: 1720px;
+  }
+  .LandingPageBlog__Container .MoreNews--button {
+    width: 80%;
+  }
+}
+@media all and (max-width: 500px) {
+  .LandingPageBlog__Container .LandingPageBlog__Head--Content #Bold--text {
+    font-size: 23px;
+    font-family: "Poppins";
+  }
+  .LandingPageBlog__Container {
+    height: 1600px;
+  }
+}
+@media all and (max-width: 400px) {
+  .LandingPageBlog__Container {
+    height: 1460px;
+  }
+}
+.Footer__Container {
+  width: 100%;
+  max-height: 400px;
+  padding: 20px;
+  margin-top: 60px;
+  background-color: black;
+}
+.Footer__Container .Footer__left-section {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: row;
+}
+.Footer__Container .Footer__left-section .left--1, .Footer__Container .Footer__left-section .left--2, .Footer__Container .Footer__left-section .right__section--1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Footer__Container .Footer__left-section .left--1 #Footer--logo, .Footer__Container .Footer__left-section .left--2 #Footer--logo, .Footer__Container .Footer__left-section .right__section--1 #Footer--logo {
+  width: 40%;
+}
+.Footer__Container .Footer__left-section .left--1 #left1--paragraph, .Footer__Container .Footer__left-section .left--1 .Footer--ContactInfo > li > p, .Footer__Container .Footer__left-section .left--2 #left1--paragraph, .Footer__Container .Footer__left-section .left--2 .Footer--ContactInfo > li > p, .Footer__Container .Footer__left-section .right__section--1 #left1--paragraph, .Footer__Container .Footer__left-section .right__section--1 .Footer--ContactInfo > li > p {
+  font-size: 18px;
+  font-family: "Calibri";
+  color: #ffffff;
+  font-weight: normal;
+}
+.Footer__Container .Footer__left-section .left--1 .left--Icons > img, .Footer__Container .Footer__left-section .left--1 .Footer--ContactInfo > li > img, .Footer__Container .Footer__left-section .left--2 .left--Icons > img, .Footer__Container .Footer__left-section .left--2 .Footer--ContactInfo > li > img, .Footer__Container .Footer__left-section .right__section--1 .left--Icons > img, .Footer__Container .Footer__left-section .right__section--1 .Footer--ContactInfo > li > img {
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.NewsLetter {
+  width: 100%;
+  margin-top: 10px !important;
+  padding: 0px 0px 0px 28px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#CopyRight {
+  font-size: 15px;
+  width: 55%;
+  color: #ffffff;
+  font-family: "Calibri";
+}
+
+.left--2 > h1, .right__section--1 > h1 {
+  font-size: 20px;
+  color: #f9240c;
+  font-family: "Poppins";
+}
+
+.Footer--services, .Footer--ContactInfo {
+  list-style-type: none;
+}
+
+.Footer--services > li, .Footer--ContactInfo > li {
+  font-family: "Calibri";
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  margin: 10px;
+}
+
+@media all and (max-width: 750px) {
+  .Footer__Container {
+    max-height: 1500px;
+  }
+  .Footer__Container .Footer__left-section {
+    width: 85%;
+    flex-direction: column;
+  }
+  .NewsLetter {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media all and (max-width: 600px) {
+  #CopyRight {
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.LandingPage__Container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#TextContent--head {
+  font-size: 25px;
+  font-family: "sans-serif";
+  color: #f9240c;
+  margin-bottom: 15px;
+}
+
+#TextContent--BoldText {
+  font-size: 28px;
+  font-family: "Poppins";
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+#TextContent--Paragraph {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Calibri";
+  margin-bottom: 15px;
+}
+
+#ReadMore {
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Calibri";
+  color: #f9240c;
+  font-weight: bold;
+}
+
+@media all and (max-width: 400px) {
+  #TextContent--Paragraph {
+    line-height: 26px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.AboutUs__Container {
+  width: 100%;
+  height: 100%;
+}
+
+.AboutUs--background {
+  background-image: url("/Image/IntroSliderImage3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.595);
+  background-blend-mode: soft-light;
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+}
+
+.AboutUs__Details {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.AboutUs__Details .Details__TextContent {
+  width: 50%;
+}
+.AboutUs__Details .Details__ImageContent {
+  width: 40%;
+}
+
+.Details__Values {
+  width: 100%;
+  margin-top: 50px;
+  max-height: 110%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  text-align: center;
+  gap: 5px;
+}
+.Details__Values .Details__Corevalues, .Details__Values .Details__Visions, .Details__Values .Details__Mission {
+  width: 90%;
+  margin: auto;
+}
+.Details__Values .Details__Corevalues .Corevalues--List, .Details__Values .Details__Visions .Corevalues--List, .Details__Values .Details__Mission .Corevalues--List {
+  list-style-type: circle;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+}
+.Details__Values .Details__Corevalues .Corevalues--List > li, .Details__Values .Details__Corevalues #TextContent--Paragraph, .Details__Values .Details__Visions .Corevalues--List > li, .Details__Values .Details__Visions #TextContent--Paragraph, .Details__Values .Details__Mission .Corevalues--List > li, .Details__Values .Details__Mission #TextContent--Paragraph {
+  font-size: 20px;
+  font-family: "Calibri";
+  color: #ffffff;
+}
+
+.Details__Choose {
+  width: 90%;
+  margin-top: 50px !important;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Details__Choose .Choose--text {
+  width: 50%;
+}
+.Details__Choose .Choose__image--container {
+  width: 45%;
+}
+.Details__Choose #Choose__image {
+  max-width: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.Details__Choose #TextContent--BoldText {
+  color: #f9240c;
+  margin-bottom: 0px;
+}
+
+@media all and (max-width: 900px) {
+  .AboutUs__Details {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .AboutUs__Details .Details__TextContent {
+    width: 90%;
+  }
+  .AboutUs__Details .Details__ImageContent {
+    width: 80%;
+  }
+  .Details__Choose {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Details__Choose .Choose--text {
+    width: 90%;
+  }
+  .Details__Choose .Choose__image--container {
+    width: 70%;
+  }
+}
+@media all and (max-width: 650px) {
+  .Details__Values .Details__Corevalues .Corevalues--List,
+.Details__Values .Details__Visions .Corevalues--List,
+.Details__Values .Details__Mission .Corevalues--List {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+.ServicesDropDown__Container {
+  width: 200px;
+  height: 180px;
+  right: 310px;
+  padding: 25px 0px;
+  top: 45px;
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.ServicesDropDown__Container .ServicesList {
+  list-style-type: none;
+  width: 100%;
+}
+.ServicesDropDown__Container .ServicesList > li, .ServicesDropDown__Container #JobRecruitmentRoute {
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: row;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  font-family: "Poppins";
+}
+.ServicesDropDown__Container .ServicesList > li #ServicesImage, .ServicesDropDown__Container #JobRecruitmentRoute #ServicesImage {
+  width: 10%;
+  margin-right: 10px;
+}
+.ServicesDropDown__Container #JobRecruitmentRoute {
+  text-decoration: none;
+}
+.ServicesDropDown__Container .ServicesList > li:hover, .ServicesDropDown__Container #JobRecruitmentRoute:hover {
+  background-color: #f9240c;
+  color: #ffffff;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=Global.css.map */

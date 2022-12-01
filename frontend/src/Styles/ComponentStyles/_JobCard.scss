@@ -1,0 +1,41 @@
+@import '../PagesStyles/_Variables.scss';
+
+
+.JobCard__Container{
+    max-width: 48%;
+    max-height: 350px;
+    cursor: pointer;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary--text-color;
+    box-shadow: $card--shadow;
+    margin-bottom: 20px;
+
+    .JobCard__Content{
+        width: 100%;
+        height:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px !important;
+        align-items: center;
+        text-align: center;
+    }
+}
+.Content--Description{
+    width: 100%;
+    height: 100%;
+
+    #Description--headerText{
+        font-size: 25px;
+        font-family: $Header--fonts;
+        margin: 5px 0px 5px 0px;
+    }
+    #Description--paragraph{
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-family: $Paragraph--fonts;
+    }
+}

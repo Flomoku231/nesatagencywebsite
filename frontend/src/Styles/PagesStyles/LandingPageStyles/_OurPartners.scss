@@ -1,0 +1,53 @@
+@import '../_Variables.scss';
+
+.OurPartners__Container{
+    width: 100%;
+    height: 240px;
+    margin: 20px 0px 5px 0px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: $card--shadow;
+    text-align: center;
+
+    .OurPartners__Content{
+        width: 80%;
+        margin: auto;
+    }
+    .Partners__Image{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        #PartnerLogo{
+            width: 50%;
+        }
+    }
+    .Partner--row1, .Partner--row2, .Partner--row3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+// Making This page responsive
+@media all and (max-width: 750px){
+    .OurPartners__Container {
+        height: 160px;
+    }
+    #PartnerLogo{
+        width: 70%;
+    }
+}
+@media all and (max-width: 500px){
+    
+    .OurPartners__Container .OurPartners__Content {
+        width: 95%;
+    }
+    .OurPartners__Container .Partners__Image #PartnerLogo {
+        width: 56%;
+    }
+    .OurPartners__Container {
+        height: 125px;
+    }
+}

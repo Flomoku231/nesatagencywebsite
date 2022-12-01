@@ -1,0 +1,22 @@
+@import '../Styles/ComponentStyles/_SubmitButton.scss';
+@import '../Styles/ComponentStyles/_ClickButton.scss';
+@import '../Styles/ComponentStyles/_ServicesCard.scss';
+@import '../Styles/ComponentStyles/_NavBar.scss';
+@import '../Styles/ComponentStyles/_ImagesCard.scss';
+@import '../Styles/PagesStyles/LandingPageStyles/_LandingPage.scss';
+@import '../Styles/PagesStyles/AboutUsStyles/_AboutUs.scss';
+@import '../Styles/ComponentStyles/_ServicesDropDown.scss';
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body, html, #root{
+    width: 100%;
+    height: 100%;
+    
+}
+
+

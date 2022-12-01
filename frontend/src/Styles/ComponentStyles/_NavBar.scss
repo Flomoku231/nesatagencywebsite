@@ -1,0 +1,120 @@
+@import '../PagesStyles/_Variables.scss';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.NavBar__Container{
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    padding: 15px 5rem;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: $secondary--text-color;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+    .MenuBarDisplay{
+        display: none;
+    }
+    .MenuButton{
+        width: 25px;
+        display: none;
+        background-color: $secondary--text-color;
+        border: none;
+        cursor: pointer;
+    }
+}
+#Navar__logo {
+    width: 70px;
+    height: 45px;
+    cursor: pointer;
+}
+.Navbar__CompanyName{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 10px;
+    align-items: center;
+}
+#CompanyName__text{
+    font-size: 16px;
+    color: $brand-color;
+    font-family: $Header--fonts;
+}
+.NavBar__list{
+    justify-content: space-between;
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.NavBar__list>li,#AboutUsRoute,#ServicesRoute,#LogoRoute, 
+#TrainingRoute,#BlogPostRoute,#ContactUsRoute,#HomeRoute,#FindJobsRoute{
+    list-style-type: none;
+    font-size: 16px;
+    text-decoration: none;
+    align-items: center;
+    font-family: $Header--fonts;
+    cursor: pointer;
+    color: $brand-color;
+}
+.NavBar__list>li:hover,#HomeRoute:hover,#AboutUsRoute:hover,
+#ServicesRoute:hover,#TrainingRoute:hover,
+#BlogPostRoute:hover,#ContactUsRoute:hover{
+    color: $secondary--brand-color;
+}
+// Making this pages Responsive
+@media all and (max-width: 1000px){
+    .MenuBarDisplay{
+        display: block !important;
+    }
+    .MenuButton{
+        display: block !important;
+        width: 35px !important;
+    }
+    #AboutUsRoute,#ServicesRoute, #HomeRoute,
+    #TrainingRoute,#BlogPostRoute,#ContactUsRoute,#FindJobsRoute{
+        display: none;
+    }
+    .Navbar__CompanyName {
+        width: 80%;
+        gap: 14px;
+    }
+    .NavBar__Container {
+        padding: 10px 2rem;
+    }
+}
+@media all and (max-width: 600px){
+    .Navbar__CompanyName {
+        width: 95%;
+        gap: 5px;
+    }
+    #CompanyName__text {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 500px){
+    #CompanyName__text {
+        font-size: 12px;
+    }
+
+}
+@media all and (max-width: 400px){
+    #CompanyName__text {
+        display: none;
+    }
+    #Navar__logo {
+        width: 80px;
+        height: 45px;
+    }
+}
+

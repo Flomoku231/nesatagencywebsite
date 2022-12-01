@@ -1,0 +1,12 @@
+@import '../_Variables.scss';
+
+.OurServicesCard__Container{
+    width: 90%;
+    margin-top: 70px !important;
+    margin: auto;
+
+    .OurServicesCard__Text{
+        width: 100%;
+        margin-top: 25px;
+    }
+}

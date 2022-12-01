@@ -1,0 +1,49 @@
+@import '../PagesStyles/_Variables.scss';
+
+.Clickbtn{
+    font-size: 20px;
+    font-family: $Header--fonts;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: 0px;
+    border: 0px;
+}
+.Clickbtn:hover{
+    background-color: $brand-color;
+}
+.primary--styles{
+    background-color: $secondary--brand-color;
+    color: $secondary--text-color;
+    font-family: $Header--fonts;
+    cursor: pointer;
+    outline: 0px;
+    border: 0px;
+}
+.secondary--styles{
+    background-color: $brand-color;
+    outline: 0px;
+    border: 0px;
+    color: $secondary--text-color;
+    font-family: $Header--fonts;
+    cursor: pointer;
+}
+.large--sizes{
+    padding: 10px 50px;
+    font-size: 20px;
+}
+.medium--sizes{
+    padding: 6px 15px;
+    font-size: 18px;
+}
+.small--sizes{
+    padding: 4px 10px;
+    font-size: 16px;
+}
+// making this responsive
+@media all and (max-width: 500px){
+    .large--sizes {
+        padding: 8px 26px;
+        font-size: 17px;
+    }
+}

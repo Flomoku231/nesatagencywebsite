@@ -1,0 +1,115 @@
+@import "../_Variables";
+
+.Footer__Container{
+    width: 100%;
+    max-height:400px;
+    padding: 20px;
+    margin-top: 60px;
+    background-color: $primary--text-color;
+
+    .Footer__left-section{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        flex-direction: row;
+
+        .left--1,.left--2,.right__section--1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            #Footer--logo{
+                width: 8rem;
+            }
+            #Services_{
+                text-decoration: none;
+                color: $secondary--text-color;
+            }
+            #Services_:hover{
+                color: $brand-color;
+            }
+            #left1--paragraph,.Footer--ContactInfo>li>p{
+                font-size: 18px;
+                font-family: $Paragraph--fonts;
+                color: $secondary--text-color;
+                font-weight: normal;
+            }
+            .left--Icons>img,.Footer--ContactInfo>li>img{
+                width: 20px;
+                cursor: pointer;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.NewsLetter{
+    width: 100%;
+    margin-top: 10px !important;
+    padding: 0px 0px 0px 28px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+
+}
+#CopyRight{
+    font-size: 15px;
+    width: 55%;
+    color: $secondary--text-color;
+    font-family: $Paragraph--fonts;
+}
+.left--2>h1,.right__section--1>h1{
+    font-size: 20px;
+    color: $secondary--brand-color;
+    font-family: $Header--fonts;
+}
+.Footer--services,.Footer--ContactInfo{
+    list-style-type: none;  
+}
+.Footer--services>li,.Footer--ContactInfo>li{
+    font-family: $Paragraph--fonts;
+    color: $secondary--text-color;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin: 10px;
+}
+
+// Making this page responsive
+@media all and (max-width: 795px){
+    .Footer__Container{
+        max-height:1500px;
+    }
+    .Footer__Container .Footer__left-section {
+        width: 85%;
+        flex-direction: column;
+    }
+    #CopyRight {
+        display: flex;
+        justify-content: center;
+    }
+    .NewsLetter{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        align-items: center;    
+}
+}
+@media all and (max-width: 600px){
+    #CopyRight {
+        width: 92%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+

@@ -1,0 +1,103 @@
+@import "../_Variables";
+@import "../../ComponentStyles/_BlogCard.scss";
+
+
+.LandingPageBlog__Container{
+    width: 100%;
+    height: 700px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .LandingPageBlog__Head--Content{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 35px;
+
+        #Header--text{
+            font-size: 25px;
+            font-family: $SubHeader--fonts;
+            color: $secondary--brand-color;
+        }
+
+        #Bold--text{
+            font-size: 30px;
+            font-family: $Header--fonts;
+        }
+    }
+    .MoreNews--button{
+        width: 40%;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+    }
+}
+.LandingPageBlog__Cards{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: auto;
+}
+
+// makin this page responsive
+@media all and (max-width: 900px){
+    .LandingPageBlog__Cards {
+        width: 90%;
+        gap: 15px;
+    }
+}
+@media all and (max-width: 850px){
+    .LandingPageBlog__Container {
+        height: 760px;
+        margin-top: 45px;
+    }
+}
+@media all and (max-width: 795px){
+    .LandingPageBlog__Container{
+        width: 100%;
+        height: 1700px;
+        margin-top: 25px;
+    }
+    .LandingPageBlog__Cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+}
+@media all and (max-width: 600px){
+    .LandingPageBlog__Container {
+        height: 1720px;
+    }
+    .LandingPageBlog__Container .MoreNews--button {
+        width: 80%;
+    }
+}
+@media all and (max-width: 500px){
+    .LandingPageBlog__Container .LandingPageBlog__Head--Content #Bold--text {
+        font-size: 23px;
+        font-family: "Poppins";
+    }
+    .LandingPageBlog__Container {
+        height: 1600px;
+    }
+}
+@media all and (max-width: 432px){
+    
+.LandingPageBlog__Container {
+    height: 1720px;
+}
+
+}
+@media all and (max-width: 350px){
+    .LandingPageBlog__Container {
+        height: 1850px;
+    }
+}

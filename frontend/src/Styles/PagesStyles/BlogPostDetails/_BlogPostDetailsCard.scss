@@ -1,0 +1,54 @@
+@import '../_Variables.scss';
+
+.BlogPostDetailsCard__Container{
+    width: 90%;
+    padding: 150px 0px 0px 0px;
+    margin: auto;
+
+    #PostImageID{
+        width: 100%;
+        margin-top: 20px;
+        max-height: 100%;
+    }
+    #TextContent--Paragraph{
+        width: 85%;
+        margin-top: 30px !important;
+        margin: auto;
+    }
+    #TextContent--BoldText{
+        font-size: 18px;
+    }
+    .DetailsImage__Gallery{
+        width: 100%;
+        margin-top: 20px !important;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #GalleryID{
+        width: 30%;
+        cursor: pointer;
+        height: 50%;
+    }
+}
+// Making this page responsive
+@media all and (max-width: 750px){
+    .BlogPostDetailsCard__Container .DetailsImage__Gallery {
+        flex-direction: column;
+    }
+    .BlogPostDetailsCard__Container #GalleryID {
+        width: 70%;
+    }
+    .BlogPostDetailsCard__Container #TextContent--Paragraph {
+        width: 90%;
+    }
+}
+@media all and (max-width: 450px){
+    #TextContent--HeadText{
+        font-size: 20px;
+    }
+}
+

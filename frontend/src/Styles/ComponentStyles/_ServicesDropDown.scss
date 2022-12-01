@@ -1,0 +1,43 @@
+@import '../PagesStyles/_Variables.scss';
+
+.ServicesDropDown__Container{
+    width: 200px;
+    height: 180px;
+    right: 280px;
+    padding: 25px 0px;
+    top: 45px;
+    position: fixed;
+    background-color: $secondary--text-color;
+    box-shadow: $card--shadow ;
+
+    .ServicesList{
+        list-style-type: none;
+        width: 100%;
+    }
+    .ServicesList>li,#JobRecruitmentRoute{
+        display: flex;
+        padding: 10px 0px;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        color: $primary--text-color;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: left;
+        font-family: $Header--fonts;
+
+        #ServicesImage{
+            width: 10%;
+            margin-right: 10px;
+        }
+       
+    }
+    #JobRecruitmentRoute{
+        text-decoration: none;
+    }
+    .ServicesList>li:hover, #JobRecruitmentRoute:hover{
+        background-color: $secondary--brand-color;
+        color: $secondary--text-color;
+    }
+}

@@ -1,0 +1,98 @@
+@import '../PagesStyles/_Variables.scss';
+
+
+.ServicesCard__Content,#LandingPageServices__Route{
+    height: 100%;
+    width: 100%;
+
+
+}
+.Content__text{
+    width: 100%;
+    margin-top: 5px;
+}
+#LandingPageServices__Route{
+    text-decoration: none;
+    list-style-type: none;
+    color: $primary--text-color;
+}
+#ServicesCard__Content-header{
+    font-size: 20px;
+    font-family: $Header--fonts;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+#ServicesCard__Content-paragraph{
+    font-size: 18px;
+    font-family: $Paragraph--fonts;
+    line-height: 20px;
+}
+.Card__Container{
+    cursor: pointer;
+    max-width: 28%;
+    padding: 30px 20px;
+    height: 400px;
+    background-color: white;
+    box-shadow: rgba(206, 17, 17, 0.157) 0px 7px 29px 0px;
+}
+.Card__Container:hover #ImageID{
+    animation: Bounce 1s forwards alternate ;
+}
+@keyframes Bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-20px);} 
+   60% {transform: translateY(-10px);} 
+}
+#ImageID{
+    width: 80px;
+    height: 80px;
+}
+
+// Making This Page Responsive
+@media all and (max-width: 1000px){
+    .Card__Container {
+        max-width: 30%;
+    }
+}
+@media all and (max-width: 900px){
+    .Card__Container{
+        cursor: pointer;
+        max-width: 65%;
+        padding: 40px 20px;
+        height: 320px;
+    }
+}
+@media all and (max-width: 610px){
+    .Card__Container{
+        height: 340px;
+    }
+}
+@media all and (max-width: 500px){
+    .Card__Container {
+        padding: 8px 14px;
+    }
+}
+@media all and (max-width: 400px){
+    .Card__Container {
+        max-width: 70%;
+    }
+    #ImageID {
+        width: 45px;
+        height: 60px;
+    }
+    #ServicesCard__Content-header {
+        font-size: 18px;
+        font-family: "Poppins";
+        margin-bottom: -6px;
+        margin-top: -5px;
+    }
+}
+@media all and (max-width: 350px){
+    .Card__Container {
+        max-width: 80%;
+    }
+    #ServicesCard__Content-header {
+        font-size: 17px;
+        margin-top: -9px;
+    }
+}

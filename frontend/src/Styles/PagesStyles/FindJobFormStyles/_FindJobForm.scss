@@ -1,0 +1,127 @@
+@import '../_Variables.scss';
+
+.FindJobForm__Container{
+    width: 100%;
+    height: 100%;
+
+    .FindJob__Slider{
+        background-image: url('/Image/IntroSliderImage1.jpg') ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 650px;
+        background-color: $blur--background-color;
+        background-blend-mode: soft-light;
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .FindJobForm__Content{
+        width: 100%;
+        padding: 1.5rem 0rem 0rem 0rem;
+
+        .JobForm{
+            width: 60%;
+            max-height: 30rem;
+            border: 1px solid $brand-color;
+            border-radius: $primary--border-radius;
+            box-shadow: $primary--shadow;
+            padding: 0px 0px 40px 0px;
+            display: flex;
+            align-items: center;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .formHead{
+            width: 100%;
+            height: 5rem;
+            background-color: $brand-color;
+            font-family: $Header--fonts;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            color: $secondary--text-color;
+            font-size: 12px;
+            object-fit: cover;
+        }
+    }
+    .NameInput,.EmailInput,.CVInput{
+        height: 70px;
+        width:70% ;
+        margin: auto;
+        padding: 10px 0px 0px 0px;
+    }
+    #NameLabel,#EmailLabel,#CVlabel{
+        font-size: 22px;
+        font-family: $Paragraph--fonts;
+        cursor: pointer;
+    }
+    #Name,#Email{
+        padding: 12px 20px;
+        font-size: 18px;
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid $primary--text-color;
+        outline: none;
+    }
+    #CV{
+        width: 100%;
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    ::-webkit-file-upload-button{
+        border: none;
+        font-size: 18px;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: $primary--text-color;
+        color: $secondary--text-color;
+    }
+    ::-webkit-file-upload-button:hover{
+        background-color: $secondary--brand-color;
+    }
+    #SubmitCV--btn{
+        width: 50%;
+        margin-top: 20px;
+        padding: 0.8rem 1rem;
+        font-size: 1.3rem;
+    }
+
+}
+// Responsiveness
+@media all and (max-width: 500px){
+    .FindJobForm__Container .FindJobForm__Content .JobForm {
+        width: 85%;
+        gap: 0.6rem;
+    }
+    .FindJobForm__Container .FindJob__Slider {
+        height: 500px;
+    }
+    .FindJobForm__Container .NameInput, .FindJobForm__Container .EmailInput, 
+    .FindJobForm__Container .CVInput {
+        height: 75px;
+        width: 85%;
+    }
+    .FindJobForm__Container .FindJobForm__Content .formHead {
+        height: 3rem;
+    }
+    .FindJobForm__Container #Name, .FindJobForm__Container #Email {
+        padding: 8px 12px;
+        font-size: 16px;
+        margin-top: 5px;
+        width: 100%;
+    }
+    .FindJobForm__Container #NameLabel, .FindJobForm__Container #EmailLabel, 
+    .FindJobForm__Container #CVlabel, .FindJobForm__Container #CV  {
+        font-size: 17px;
+    }
+    ::-webkit-file-upload-button{
+        font-size: 17px;
+    }
+}

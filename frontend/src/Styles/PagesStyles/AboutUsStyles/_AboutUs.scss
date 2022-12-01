@@ -1,0 +1,110 @@
+@import '../_Variables.scss';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.AboutUs__Container{
+    width: 100%;
+    height: 100%;
+}
+.AboutUs--background{
+    background-image: url('/Image/IntroSliderImage3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    height: 650px;
+    background-color: $blur--background-color;
+    background-blend-mode: soft-light;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+}
+.AboutUs__Details{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .Details__TextContent{
+        width: 100%;
+    }
+}
+.Details__Values{
+    width:100%;
+    margin-top: 50px;
+    max-height: 110%;
+    background-color:$primary--text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: $card--shadow;
+    text-align: center;
+    gap: 5px;
+
+    .Details__Corevalues,.Details__Visions,.Details__Mission{
+        width: 90%;
+        margin: auto;
+
+        .Corevalues--List{
+            list-style-type: circle;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: auto;
+        }
+        .Corevalues--List>li,#TextContent--Paragraph{
+            font-size: 20px;
+            font-family: $Paragraph--fonts;
+            color: $secondary--text-color;
+        } 
+    }
+    
+}
+.Details__Choose{
+    width: 90%;
+    margin-top: 50px !important;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .Choose--text{
+        width: 100%;
+    }
+
+    #TextContent--BoldText{
+        color: $secondary--brand-color;
+        margin-bottom: 0px;
+    }
+}
+// Responsiveness
+
+@media all and (max-width: 650px){
+    .Details__Values .Details__Corevalues .Corevalues--List, 
+    .Details__Values .Details__Visions .Corevalues--List, 
+    .Details__Values .Details__Mission .Corevalues--List {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+@media all and (max-width: 500px){
+    .Details__Values .Details__Corevalues .Corevalues--List > li, 
+    .Details__Values .Details__Corevalues #TextContent--Paragraph, 
+    .Details__Values .Details__Visions .Corevalues--List > li, 
+    .Details__Values .Details__Visions #TextContent--Paragraph, 
+    .Details__Values .Details__Mission .Corevalues--List > li, 
+    .Details__Values .Details__Mission #TextContent--Paragraph {
+        font-size: 17px;
+    }
+    .AboutUs--background{
+        height: 500px;
+    }
+}

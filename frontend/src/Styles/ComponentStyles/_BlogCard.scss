@@ -1,0 +1,67 @@
+@import '../PagesStyles/_Variables.scss';
+
+.BlogCard__Container{
+    width: 100%;
+    cursor: pointer;
+    max-width: 350px;
+    box-shadow: $card--shadow;
+    padding: 15px;
+
+    .BlogCard__Content,  #BlogImage{
+        width: 100%;
+    }
+    #BlogImage{
+        max-height: 16rem;
+    }
+    .BlogCard__date{
+        width: 100%;
+        display: flex;
+        margin: 10px 0px 10px 0px;
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+
+        #date--image{
+            width: 8%;
+            height: 25px;
+        }
+        #date--text{
+            font-family: $Paragraph--fonts;
+            font-size: 18px;
+        }
+    }
+    #text--head{
+        font-family: $Header--fonts;
+        font-size: 18px;
+    }
+    #text--description{
+        font-family: $Paragraph--fonts;
+        font-size: 17px;
+    }
+
+}
+.BlogCard__Container:hover{
+    animation: BlogCardBreath 2s  forwards;
+}
+@keyframes BlogCardBreath{
+    0% {
+        transform: scale(0.96);
+      }
+      100% {
+        transform: scale(0.96);
+      }
+}
+// Making this page responsive
+@media all and (max-width: 795px){
+    .BlogCard__Container{
+        max-width: 400px;
+    }
+    .BlogCard__date{
+        gap: 4px;
+    }
+}
+@media all and (max-width: 700px){
+    .BlogCard__Container #text--head {
+        font-size: 14px;
+    }
+}

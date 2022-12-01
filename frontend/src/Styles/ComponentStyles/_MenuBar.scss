@@ -1,0 +1,61 @@
+@import '../PagesStyles/_Variables.scss';
+
+.MenuBar__Container{
+    width: 250px;
+    height: 400px;
+    position: fixed;
+    padding: 10px 0px 0px 0px;
+    right: 0px;
+    top: 70px;
+    box-shadow: $primary--shadow;
+    background-color: $primary--text-color;
+}
+.HideMenuList{
+    display: none;
+}
+.ShowMenuList{
+    display: block;
+    width: 100%;
+    list-style-type: none;
+
+    .ShowMenuList>li,#JobRecruitmentSub{
+       color: $secondary--text-color;
+       font-size: 18px;
+       font-family: $Paragraph--fonts;
+       cursor: pointer;
+       text-decoration: none;
+    }
+}
+#JobRecruitmentSub:hover{
+    font-family: $Header--fonts;
+    color: $secondary--brand-color;
+}
+.MenuBar__list{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.MenuBar__list>li,#HomeMenu,#AboutUsMenu,#ServicesMenu, 
+#TrainingMenu,#BlogPostMenu,#FindJobsMenu,#ContactUsMenu{
+    list-style-type: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: $Header--fonts;
+    cursor: pointer;
+    color: $secondary--text-color;
+}
+.MenuBar__list>li:hover,#HomeMenu:hover,#AboutUsMenu:hover,
+#ServicesMenu:hover,#TrainingMenu:hover,
+#BlogPostMenu:hover,#ContactUsMenu:hover{
+    background-color: $secondary--brand-color;
+}
+#AngleDropID{
+    width: 15px;
+    height: 15px;
+    transform: translateY(5px);
+}

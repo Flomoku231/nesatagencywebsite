@@ -1,0 +1,58 @@
+@import '../PagesStyles/_Variables.scss';
+
+
+.button{
+    font-family: $Header--fonts;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    outline: 0px;
+    border: 0px;
+    border-radius: 10px;
+}
+.button:hover{
+    transform: translateY(-3px);
+}
+.primary-styles{
+    background-color: $secondary--brand-color;
+    border-radius: 8px;
+    color: $secondary--text-color;
+    font-family: $Header--fonts;
+    cursor: pointer;
+    outline: 0px;
+    border: 0px;
+}
+.secondary-styles{
+    background-color: $brand-color;
+    border-radius: 8px;
+    outline: 0px;
+    border: 0px;
+    color: $secondary--text-color;
+    font-family: $Header--fonts;
+    cursor: pointer;
+}
+.large-size{
+    padding: 8px 30px;
+    font-size: 20px;
+}
+.medium-size{
+    padding: 6px 15px;
+    font-size: 18px;
+}
+.small-size{
+    padding: 4px 10px;
+    font-size: 16px;
+}
+// Responsiveness
+@media all and (max-width: 600px){
+    .large-size {
+        padding: 1px 10px;
+        font-size: 18px;
+    }
+}
+@media all and (max-width: 500px){
+    .large-size {
+        padding: 9px 10px;
+        font-size: 20px;
+    }
+}

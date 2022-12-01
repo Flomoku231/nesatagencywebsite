@@ -1,0 +1,52 @@
+@import "../_Variables.scss";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.LandingPageIntro__Container{
+    width: 100%;
+    height: 650px;
+}
+
+.Intro__Slider1{
+    background-image: url('/Image/IntroSliderImage1.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    background-color: $blur--background-color;
+    background-blend-mode: soft-light;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+}
+.Intro__Slider2{
+    background-image: url('/Image/IntroSliderImage2.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    background-color: $blur--background-color;
+    background-blend-mode: soft-light;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+}
+.Intro__Slider3{
+    background-image: url('/Image/IntroSliderImage3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    background-color: $blur--background-color;
+    background-blend-mode: soft-light;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+}
+@media all and (max-width: 500px){
+    .Intro__Slider1,.Intro__Slider3,.Intro__Slider2{
+        height: 500px;
+    }
+    .LandingPageIntro__Container{
+        height: 500px;
+    }
+}

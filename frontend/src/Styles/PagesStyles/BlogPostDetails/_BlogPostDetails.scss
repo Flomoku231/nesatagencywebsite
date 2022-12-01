@@ -1,0 +1,13 @@
+@import '../_Variables.scss';
+@import './_BlogPostDetailsCard.scss';
+
+.BlogPostDetails__Container{
+    width: 100%;
+    height: 100%;
+
+    .BlogPostDetails__Content{
+        width: 100%;
+        height: 100%;
+    }
+}
+// Making this page responsive

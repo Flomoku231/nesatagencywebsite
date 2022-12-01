@@ -1,0 +1,66 @@
+@import "../_Variables";
+
+
+.IntroSlider__Content{
+    width: 100%;
+    height:100%;
+    display: flex;
+    gap: 20px;
+    animation: SlidesContent 2s ease-in;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@keyframes SlidesContent {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#Content__Head{
+    font-family: $SubHeader--fonts;
+    font-size: 30px;
+    color: $secondary--text-color;
+    border-bottom: 4px solid $secondary--brand-color;
+}
+#Content__Bold{
+    font-family: $Header--fonts;
+    font-size: 55px;
+    color: $secondary--text-color;
+    max-width:70%;
+}
+
+// Making Page Responsive
+@media all and (max-width: 900px){
+    #Content__Bold {
+        font-size: 35px;
+        max-width: 75%;
+    }
+}
+@media all and (max-width: 600px){
+    #Content__Bold {
+        font-size: 25px;
+        max-width: 77%;
+    }
+    #Content__Head{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 500px){
+    #Content__Bold {
+        font-size: 20px;
+        max-width: 65%;
+    }
+    #Content__Head{
+        font-size: 22px;
+    }
+}
+@media all and (max-width: 400px){
+    #Content__Bold {
+        font-size: 18px;
+        max-width: 70%;
+    }
+}

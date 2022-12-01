@@ -1,0 +1,45 @@
+@import "../_Variables";
+
+
+.Services__Container{
+    margin: 20px 0px 0px 0px;
+    transform: translateY(-25%);
+    gap: 15px;
+    position: relative;
+    z-index: 200;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+// Making This Page Responsive
+@media all and (max-width: 1000px){
+    .Services__Container {
+        transform: translateY(-18%);
+    }
+}
+@media all and (max-width: 900px){
+    .Services__Container{
+        height: 1050px;
+        flex-direction: column;
+    }
+    .Services__Container {
+        transform: translateY(-2%);
+    }
+    
+}
+@media all and (max-width: 610px){
+    .Services__Container {
+        transform: translateY(2%);
+        gap: 24px;
+    }
+}
+@media all and (max-width: 350px){
+    .Services__Container {
+        height: 900px;
+    }
+}

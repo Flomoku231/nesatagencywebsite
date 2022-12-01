@@ -1,0 +1,72 @@
+@import '../PagesStyles/_Variables.scss';
+
+
+.TestimonialCard__Container{
+    width: 100%;
+    cursor: pointer;
+    padding: 15px 4px 15px 4px;
+    max-height: 60%;
+    box-shadow: $card--shadow;
+    background-color: $blur--background-color;
+    
+    // Card Content
+    .TestimonialCard__Content{
+        width: 100%;
+        max-height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 15px;
+
+        #TestimonialCard__Content-image{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .TestimonialCard__Content-text{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+
+            #ParagraphText{
+                font-size: 18px;
+                font-family: $Paragraph--fonts;
+                color: $secondary--text-color;
+                margin: 8px;
+            }
+            #NameText{
+                font-size: 20px;
+                font-family: $Header--fonts;
+                color: $secondary--brand-color;
+            }
+            #PositionText{
+                font-size: 20px;
+                font-family: $SubHeader--fonts;
+                color: $secondary--text-color;
+                margin-bottom: 15px !important;
+            }
+        }
+    }
+}
+// Making This page responsive
+@media all and (max-width: 900px){
+    #ParagraphText{
+        font-size: 16px;
+    }
+    #NameText{
+        font-size: 18px;
+    }
+    #PositionText{
+        font-size: 17px;
+    }
+}
+@media all and (max-width: 500px){
+    .TestimonialCard__Container {
+        margin: auto;
+        width: 90%;
+    }
+}
