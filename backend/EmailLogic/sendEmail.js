@@ -1,12 +1,16 @@
 import nodemailer from 'nodemailer';
+import * as dotenv from 'dotenv'
+
+dotenv.config()
+
 
 const sendEmail = async(subject, message, sendTo, sendFrom, ReplyTo) =>{
     const Transporter = nodemailer.createTransport({
-        host: "smtp-mail.outlook.com",
-        Port: "587",
+        host: process.env.HOST ,
+        Port: process.env.EmailPort,
         auth: {
-            user: "nesatagency2023@gmail.com",
-            pass: "nesat@2023",
+            user: process.env.NESATemail,
+            pass: process.env.NESATpassword,
         },
         tls: {
             rejectUnauthorized: false,

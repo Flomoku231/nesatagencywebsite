@@ -1,4 +1,5 @@
 import express from 'express';
+import * as dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import teamMembers from './DatabaseSchema/teamSchema.js';
 import sendEmail from './EmailLogic/sendEmail.js'
@@ -9,12 +10,12 @@ import contactForm from './DatabaseSchema/contactUsSchema.js'
 import findJobsInfo from './DatabaseSchema/findJobsFormSchema.js'
 import multer from 'multer'
 import Cors from 'cors';
-const connectionURL = 'mongodb://localhost:27017/nesat-agencyDB'
+const connectionURL = process.env.NESATconnection;
 const app = express();
 const PORT = process.env.PORT || 7000;
 app.use(express.json())
 app.use(Cors())
-
+dotenv.config();
 // Team Members Post API 
 
 app.post('/home/team/members', function(req, res){
