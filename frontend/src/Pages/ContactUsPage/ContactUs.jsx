@@ -27,17 +27,22 @@ const ContactUs = () => {
     if (
       name &&
       /^([a-zA-Z0-9_])+@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,4})+$/i.test(email) &&
-      Sendermessage.length > 20
+      Sendermessage
     ) {
       axios.post("/api/contactUs/form", contactUs).then((res) => res.contactUs);
-      toast.success("Thanks for Contacting Us");
-    } 
-    else if (Sendermessage.length < 20) {
+      toast.success("Thanks for Contacting Us", {
+        position: toast.POSITION.TOP_CENTER,
+      });
+    } else if (!name || !Sendermessage || !email) {
       e.preventDefault();
-      toast.warn("Message must be above 20 characters");
+      toast.error("Please fill in all the fields", {
+        position: toast.POSITION.TOP_CENTER,
+      });
     } else {
       e.preventDefault();
-      toast.warn("Invalid Input");
+      toast.error("Invalid Input", {
+        position: toast.POSITION.TOP_CENTER,
+      });
     }
   };
   const ContactSubmit = (e) => {

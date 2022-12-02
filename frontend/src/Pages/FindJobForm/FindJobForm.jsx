@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../../Styles/PagesStyles/FindJobFormStyles/_FindJobForm.scss";
 import axios from "../../axiosInstance/axios.js";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import NavBar from "../../Components/NavBar";
 import SubmitButton from "../../Components/SubmitButton";
 import Footer from "../LandingPage/Footer";
@@ -19,15 +21,36 @@ const FindJobForm = () => {
       [name]: value,
     });
   };
-  const submitSuccess = () => {
+  const submitSuccess = (e) => {
     const { email, name, file } = findJob;
-    if ((email, name, file)) {
-      axios
-        .post("/api/findJobs/form", findJob)
-        .then((res) => res.findJob);
+    if (
+      name &&
+      /^([a-zA-Z0-9_])+@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,4})+$/i.test(email) &&
+      file
+    ) {
+      axios.post("/api/findJobs/form", findJob).then((res) => res.findJob);
+      toast.success("Submitted Successfully", {
+        position: toast.POSITION.TOP_CENTER,
+      });
+    } else if (!name || !file || !email) {
+      e.preventDefault();
+      toast.error("Please fill in all the fields", {
+        position: toast.POSITION.TOP_CENTER,
+      });
     } else {
-      alert("Invalid Input");
+      e.preventDefault();
+      toast.error("Invalid Input", {
+        position: toast.POSITION.TOP_CENTER,
+      });
     }
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFindJob({
+      name: "",
+      email: "",
+      file: "",
+    });
   };
   return (
     <main className="FindJobForm__Container">
@@ -40,7 +63,7 @@ const FindJobForm = () => {
         />
       </div>
       <div className="FindJobForm__Content">
-        <form action="" className="JobForm">
+        <form action="" className="JobForm" onSubmit={handleSubmit}>
           <div className="formHead">
             <h1>Fill In The Form</h1>
           </div>

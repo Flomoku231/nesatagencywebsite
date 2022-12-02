@@ -59,7 +59,6 @@ const TrainingSection = () => {
             <p id="TextContent--Paragraph">
               Subscribe Now to Receive Notification When Admission is open
             </p>
-            <NewsLetter />
           </Rotate>
         </div>
       </div>

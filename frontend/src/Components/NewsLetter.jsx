@@ -25,13 +25,19 @@ const NewsLetter = () => {
       axios
         .post("/api/newsletter/form", subscriber)
         .then((res) => res.subscriber);
-      toast.success("Subscription Successful");
+      toast.success("Subscription Successful", {
+        position: toast.POSITION.BOTTOM_LEFT,
+      });
     } else if (
       !/^([a-zA-Z0-9_])+@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,4})+$/i.test(email)
     ) {
-      toast.warn("Please enter a valid email");
+      toast.error("Please enter a valid email", {
+        position: toast.POSITION.BOTTOM_LEFT,
+      });
     } else {
-      toast.warn("Please input email");
+      toast.error("Please input email", {
+        position: toast.POSITION.BOTTOM_LEFT,
+      });
     }
   };
 
@@ -64,8 +70,8 @@ const NewsLetter = () => {
           ButtonStyles="primary--styles"
           id="Subsribe__Button"
         />
-        <ToastContainer />
       </form>
+      <ToastContainer />
     </div>
   );
 };
