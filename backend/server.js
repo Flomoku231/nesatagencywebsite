@@ -3,10 +3,10 @@ import * as dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import teamMembers from './DatabaseSchema/teamSchema.js';
 import sendEmail from './EmailLogic/sendEmail.js'
+import receiveEmail from './EmailLogic/receiveEmail.js';
 import testimonyCard from './DatabaseSchema/testimonySchema.js';
 import blogPost from './DatabaseSchema/blogPostSchema.js';
 import newsLetter from './DatabaseSchema/newsLetterSchema.js'
-import contactForm from './DatabaseSchema/contactUsSchema.js'
 import findJobsInfo from './DatabaseSchema/findJobsFormSchema.js'
 import multer from 'multer'
 import Cors from 'cors';
@@ -18,7 +18,7 @@ app.use(Cors())
 dotenv.config();
 // Team Members Post API 
 
-app.post('/home/team/members', function(req, res){
+app.post('/api/home/team/members', function(req, res){
     const teamMemberDB = req.body;
     teamMembers.create(teamMemberDB, function(err, data)
     {
@@ -31,7 +31,7 @@ app.post('/home/team/members', function(req, res){
 })
 
 // Testimonial Post API
-app.post('/home/testimonial', function(req, res){
+app.post('/api/home/testimonial', function(req, res){
     const testimoniaDB = req.body;
     testimonyCard.create(testimoniaDB, function(err, data){
         if(err){
@@ -42,7 +42,7 @@ app.post('/home/testimonial', function(req, res){
     });
 });
 // BlogPosts Post API
-app.post('/blog/posts', function(req, res){
+app.post('/api/blog/posts', function(req, res){
     const blogPostDB = req.body;
     blogPost.create(blogPostDB, function(err, data){
         if(err){
@@ -53,7 +53,7 @@ app.post('/blog/posts', function(req, res){
     })
 })
 // Home Blog Posts POST API
-app.post('/home/blog', function(req, res){
+app.post('/api/home/blog', function(req, res){
     const homeBlogDB = req.body;
     blogPost.create(homeBlogDB, function(err, data){
         if(err){
@@ -80,7 +80,7 @@ app.post('/api/newsletter/form', function(req, res){
                         Subcribing to our news Letter. Keep posted for more informations</P>
                         <h3>Nesat Team</h3>`
                         const sendTo = email
-                        const sendFrom = "nesatagency2023@gmail.com"
+                        const sendFrom = process.env.NESATemail
                         const ReplyTo = email
 
                         sendEmail(subject, message, sendTo, sendFrom, ReplyTo)
@@ -96,27 +96,39 @@ app.post('/api/newsletter/form', function(req, res){
 })
 // Post API for contact us form 
 app.post('/api/contactUs/form', function(req, res){
-    const {name, email, message} = req.body;
-    contactForm.create({name, email, message}, function(err, data){
-        if(err){
-            res.status(500).send(err)
-        }else{
+    const {name, email, Sendermessage} = req.body;
             try {
+                // Send Email Logic
                 const subject = "Appreciation" 
                 const message = `<h2>Hi ${name}!</h2> <p>Thanks for
                 contacting us. We have received your message and promise to contact you shortly</P>
                 <h3>Nesat Team</h3>`
                 const sendTo = email
-                const sendFrom = "nesatagency2023@gmail.com"
+                const sendFrom = process.env.NESATemail
                 const ReplyTo = email
 
                 sendEmail(subject, message, sendTo, sendFrom, ReplyTo)
-                res.status(201).send(data)
-            } catch (error) {
-                res.status(500).send(error.message)
+
+
+                // Received Information in EMail Logic
+                const Heading = "Email Request" 
+                const Sendmessage = `<h2>Hi Nesat Team!</h2> <p>You have a new Email from ${name} see details below: </p>
+                <ul>
+                    <li>Name: ${name}</li>
+                    <li>Email: ${email}</li>
+                    <li>Message: ${Sendermessage}</li>
+                </ul>
+                <h3>Nesat Team</h3>`
+                const sendTO = process.env.RECEIVERemail
+                const sendFROM = process.env.NESATemail
+                const ReplyTO = process.env.RECEIVERemail
+
+                receiveEmail(Heading, Sendmessage, sendTO, sendFROM, ReplyTO)
+
+            } 
+            catch (error) {
+                res.status(500).send(error.message);
             }
-        }
-    })
 })
 // Post API for Find Jobs form
 const fileStorageEngine = multer.diskStorage({
@@ -140,11 +152,12 @@ app.post('/api/findJobs/form', upload.single('file'), function(req, res){
                 const message = `<h2>Hi ${name}!</h2> <p>We have received your cv and will get back to you as soon as possible</P>
                 <h3>Nesat </h3>`
                 const sendTo = email
-                const sendFrom = "nesatagency2023@gmail.com"
+                const sendFrom = process.env.NESATemail
                 const ReplyTo = email
 
                 sendEmail(subject, message, sendTo, sendFrom, ReplyTo)
                 res.status(201).send(data)
+
             } catch (error) {
                 res.status(500).send(error.message)
             }
@@ -152,7 +165,7 @@ app.post('/api/findJobs/form', upload.single('file'), function(req, res){
     })
 })
 // Get teamMembers
-app.get('/home/team/members', function(req,res){
+app.get('/api/home/team/members', function(req,res){
     teamMembers.find(function(err, data){
         if(err){
             res.status(404).send(err)
@@ -163,19 +176,18 @@ app.get('/home/team/members', function(req,res){
     .sort('-createdAt');
 })
 // Testimonia Get API
-app.get('/home/testimonial', function(req, res){
+app.get('/api/home/testimonial', function(req, res){
     testimonyCard.find(function(err, data){
         if(err){
             res.status(404).send(err)
         }else{
             res.status(200).send(data)
         }
-    }).sort('-createdAt');;
+    }).sort('-createdAt');
 })
-
 // Get & Pagination API for blog Post
-app.get('/blog/posts', async function(req, res){
-    const Page_Size = 9;
+app.get('/api/blog/posts', async function(req, res){
+    const Page_Size = 8;
     const Pages = parseInt(req.query.Pages || 0);
     const total = await blogPost.countDocuments({})
 
@@ -189,8 +201,8 @@ app.get('/blog/posts', async function(req, res){
     })
 })
 
-// Home blog get api
-app.get('/home/blog', function(req, res){
+// Home blog get /api
+app.get('/api/home/blog', function(req, res){
     blogPost.find(function(err, data){
         if(err){
             res.status(404).send(err)
@@ -200,7 +212,7 @@ app.get('/home/blog', function(req, res){
     }).sort({createdAt : -1 })
 })
 // Getting Individual blog post API
-app.get('/home/blog/post/:_id', function(req, res){
+app.get('/api/home/blog/post/:_id', function(req, res){
 
     const getById = req.params._id;
     blogPost.find(({_id:getById}), function(err, data){

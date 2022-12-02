@@ -17,9 +17,9 @@ const JobRecruitment = () => {
       <div className="jobRecruitment__Card">
         <OurServicesCard
           ServiceTitle="Job Recruitment"
-          ServicesDesctiption="We work closely with Employers across all industry sectors to ensure that their internal sed Human Resource systems processes align to their business requirements idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. Take a 360-degree view of yours situations using our seds deep experience, industries specialization and global reach.
-          Human Resource systems processes align to their business requirements idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. Take a 360-degree view of yours situatio We work closely with Employers across all industry sectors to ensure that their internal sed Human Resource systems processes align to their business requirements idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. Take a 360-degree view of yours situations using our seds deep experience, industries specialization and global reach.
-          Human Resource systems processes align to their business requirements idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. Take a 360-degree view of yours situatio"
+          ServicesDesctiption="NESAT Agency is perfectly positioned to serve the growing demand for 
+          global leadership in our world of technology and endless change. By listing, examine and understanding our client’s strategy and culture, we are able to identify fit-for–purpose leaders for your Senior Management Board, Middle Level Mangers, Team players and across functional areas always with an eye for diversity.  We help find the best talent, build 
+          a successful team and guarantee value for shareholders through excellence in executive search."
         />
       </div>
       <Footer />

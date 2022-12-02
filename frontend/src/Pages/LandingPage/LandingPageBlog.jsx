@@ -13,7 +13,7 @@ const LandingPageBlog = () => {
 
   useEffect(() => {
     async function fetchHomeBlogs() {
-      const req = await axios.get("/home/blog");
+      const req = await axios.get("/api/home/blog");
       sethomeBlogs(req.data);
     }
     fetchHomeBlogs();

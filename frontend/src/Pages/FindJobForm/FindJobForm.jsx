@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../Styles/PagesStyles/FindJobFormStyles/_FindJobForm.scss";
-import axios from "axios";
+import axios from "../../axiosInstance/axios.js";
 import NavBar from "../../Components/NavBar";
 import SubmitButton from "../../Components/SubmitButton";
 import Footer from "../LandingPage/Footer";
@@ -23,7 +23,7 @@ const FindJobForm = () => {
     const { email, name, file } = findJob;
     if ((email, name, file)) {
       axios
-        .post("http://localhost:7000/api/findJobs/form", findJob)
+        .post("/api/findJobs/form", findJob)
         .then((res) => res.findJob);
     } else {
       alert("Invalid Input");

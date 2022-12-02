@@ -26,26 +26,26 @@ const MenuBar = () => {
         </Link>
         {/* Services SubMenu */}
         <ul className={`HideMenuList ${showMenu ? "ShowMenuList" : ""}`}>
-          <Link id="JobRecruitmentSub" to="/Services/jobRecruitment">
+          <a id="JobRecruitmentSub" href="/Services/jobRecruitment">
             <li>Job Recruitment</li>
-          </Link>
-          <Link id="JobRecruitmentSub" to="/Services/Consultancy">
+          </a>
+          <a id="JobRecruitmentSub" href="/Services/Consultancy">
             <li>Consultancy</li>
-          </Link>
-          {/* <Link id="JobRecruitmentSub" to="/Services">
+          </a>
+          {/* <a id="JobRecruitmentSub" href="/Services">
             <li>Training</li>
-          </Link> */}
+          </a> */}
         </ul>
         {/* End of Services SubMenu */}
-        <Link id="ContactUsMenu" to="/ContactUs">
+        <a id="ContactUsMenu" href="/ContactUs">
           <li>Contact Us</li>
-        </Link>
-        <Link id="BlogPostMenu" to="/Blog/Post">
+        </a>
+        <a id="BlogPostMenu" href="/Blog/Post">
           <li>News</li>
-        </Link>
-        <Link id="TrainingMenu" to="/Services/Training">
+        </a>
+        <a id="TrainingMenu" href="/Services/Training">
           <li>Training</li>
-        </Link>
+        </a>
       </ul>
     </div>
   );

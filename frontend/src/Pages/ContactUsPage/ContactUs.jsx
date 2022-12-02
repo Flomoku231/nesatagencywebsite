@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../../Styles/PagesStyles/ContactUsStyles/_ContactUs.scss";
-import Fade from 'react-reveal/Fade';
-import axios from "axios";
+import Fade from "react-reveal/Fade";
+import axios from "../../axiosInstance/axios.js";
 import SubmitButton from "../../Components/SubmitButton";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import NavBar from "../../Components/NavBar";
 import IntroSlider from "../LandingPage/IntroSlider";
 import Footer from "../LandingPage/Footer";
@@ -11,7 +13,7 @@ const ContactUs = () => {
   const [contactUs, setContactUs] = useState({
     name: "",
     email: "",
-    message: "",
+    Sendermessage: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,81 +22,95 @@ const ContactUs = () => {
       [name]: value,
     });
   };
-  const contactUsSuccess = () => {
-    const { name, email, message } = contactUs;
-    if ((name, email, message)) {
-      axios
-        .post("http://localhost:7000/api/contactUs/form", contactUs)
-        .then((res) => res.contactUs);
+  const contactUsSuccess = (e) => {
+    const { name, email, Sendermessage } = contactUs;
+    if (
+      name &&
+      /^([a-zA-Z0-9_])+@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,4})+$/i.test(email) &&
+      Sendermessage.length > 20
+    ) {
+      axios.post("/api/contactUs/form", contactUs).then((res) => res.contactUs);
+      toast.success("Thanks for Contacting Us");
+    } 
+    else if (Sendermessage.length < 20) {
+      e.preventDefault();
+      toast.warn("Message must be above 20 characters");
     } else {
-      alert("Fill in the inputy");
+      e.preventDefault();
+      toast.warn("Invalid Input");
     }
+  };
+  const ContactSubmit = (e) => {
+    e.preventDefault();
+    setContactUs({
+      name: "",
+      email: "",
+      Sendermessage: "",
+    });
   };
   return (
     <main className="ContactUs__Container">
       <NavBar />
       <IntroSlider
         HeadText={"Contact Us"}
-        Quote={"We are Available 24/7. Just Send Us Message"}
+        Quote={"We are available 24/7 to serve your Human Resource need"}
         className="ContactUsClass"
       />
       <div className="ContactUs__Content">
-      <Fade right>
-        <form action="" className="ContactUsForm">
-          <div className="ContactFormHead">
-            <h1>Send Us Message</h1>
-          </div>
-          <div className="NameInput">
-            <label id="nameLabel" htmlFor="Name">
-              Full Name
-            </label>
-            <input
-              name="name"
-              value={contactUs.name}
-              id="Name"
-              type="text"
-              onChange={handleChange}
-              placeholder="Enter Name"
-              required
+        <Fade right>
+          <form action="" className="ContactUsForm" onSubmit={ContactSubmit}>
+            <div className="ContactFormHead">
+              <h1>Send Us Message</h1>
+            </div>
+            <div className="NameInput">
+              <label id="nameLabel" htmlFor="Name">
+                Full Name
+              </label>
+              <input
+                name="name"
+                value={contactUs.name}
+                id="Name"
+                type="text"
+                onChange={handleChange}
+                placeholder="Enter Name"
+              />
+            </div>
+            <div className="EmailInput">
+              <label id="emailLabel" htmlFor="Email">
+                Email
+              </label>
+              <input
+                name="email"
+                value={contactUs.email}
+                id="Email"
+                onChange={handleChange}
+                type="email"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div className="MessageInput">
+              <label id="messageLabel" htmlFor="MessageID">
+                Message
+              </label>
+              <textarea
+                name="Sendermessage"
+                value={contactUs.Sendermessage}
+                onChange={handleChange}
+                id="MessageID"
+                cols="30"
+                rows="10"
+                placeholder="Enter Message"
+              ></textarea>
+            </div>
+            <SubmitButton
+              onClick={contactUsSuccess}
+              name="Submit"
+              ButtonSize="large-size"
+              ButtonStyles="secondary-styles"
+              id="Contact--btn"
             />
-          </div>
-          <div className="EmailInput">
-            <label id="emailLabel" htmlFor="Email">
-              Email
-            </label>
-            <input
-              name="email"
-              value={contactUs.email}
-              id="Email"
-              onChange={handleChange}
-              type="email"
-              placeholder="Enter Email"
-              required
-            />
-          </div>
-          <div className="MessageInput">
-            <label id="messageLabel" htmlFor="MessageID">
-              Message
-            </label>
-            <textarea
-              name="message"
-              value={contactUs.message}
-              onChange={handleChange}
-              id="MessageID"
-              cols="30"
-              rows="10"
-              placeholder="Enter Message"
-              required
-            ></textarea>
-          </div>
-          <SubmitButton
-            onClick={contactUsSuccess}
-            name="Submit"
-            ButtonSize="large-size"
-            ButtonStyles="secondary-styles"
-            id="Contact--btn"
-          />
-        </form>
+            {/* <ToastContainer /> */}
+          </form>
         </Fade>
       </div>
 

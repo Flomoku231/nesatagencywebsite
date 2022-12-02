@@ -36,6 +36,31 @@
         text-decoration: none;
     }
 }
+.Pagination__Buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .Prev__Button, .Number__Button,.Next__Button{
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    .Prev__Button,.Next__Button{
+        padding: 10px;
+        background-color: $secondary--brand-color;
+        color: $secondary--text-color;
+    }
+    .Next__Button{
+        background-color: $brand-color;
+    }
+    .Number__Button{
+        padding: 8px;
+    }
+    .Number__Button:focus{
+        background-color: $blur--background-color;
+    }
+}
 // Making this page responsive
 @media all and (max-width: 750px){
     .BlogPost__Container .BlogPost__Content {
@@ -45,8 +70,9 @@
     .BlogPost__Container .BlogPost__Content .BlogPost__Content--second, 
     .BlogPost__Container .BlogPost__Content .BlogPost__Content--third {
         flex-direction: column;
-    }
+    }  
 }
+
 @media all and (max-width: 500px){
     .BlogPost__Container .BlogPost__Intro {
         height: 500px;

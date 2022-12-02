@@ -64,9 +64,9 @@ const NavBar = () => {
         <Link id="ContactUsRoute" to="/ContactUs">
           <li>Contact Us</li>
         </Link>
-        <Link id="BlogPostRoute" to="/Blog/Post">
+        <a id="BlogPostRoute" href="/Blog/Post">
           <li>News</li>
-        </Link>
+        </a>
         {/* <Link id="TrainingRoute" to="/Services/Training">
           <li>Training</li>
         </Link> */}

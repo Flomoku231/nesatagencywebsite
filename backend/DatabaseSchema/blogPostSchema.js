@@ -5,6 +5,9 @@ const blogPostSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    SecondImageURL:String,
+    ThirdImageURL : String,
+    FourthImageURL: String,
     postDate:{
         type: String,
         default: ()=> new Date().toDateString()

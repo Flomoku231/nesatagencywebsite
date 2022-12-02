@@ -17,6 +17,13 @@
     padding: 30px 0px 0px 0px;
 
 }
+.Consultancy__List{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+}
 
 }
 @media all and (max-width: 500px){

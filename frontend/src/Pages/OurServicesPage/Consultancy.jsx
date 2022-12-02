@@ -1,31 +1,53 @@
-import React from 'react';
+import React from "react";
 import "../../Styles/PagesStyles/OurServicesPage/_Consultancy.scss";
 import NavBar from "../../Components/NavBar";
 import IntroSlider from "../LandingPage/IntroSlider";
 import OurServicesCard from "./OurServicesCard";
 import Footer from "../LandingPage/Footer";
 
-
 const Consultancy = () => {
   return (
     <main className="Consultancy__Container">
-    <NavBar />
-    <IntroSlider
-      HeadText="Consultancy"
-      Quote="We Believed in Prayers, HardWork & Dedication"
-      className="Consultancy__Intro"
-    />
-    <div className="Consultancy__Card">
-      <OurServicesCard
-        ServiceTitle="Consultancy"
-        ServicesDesctiption="We work closely with Employers across all industry sectors to ensure that their internal sed Human Resource systems processes align to their business requirements idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. Take a 360-degree view of yours situations using our seds deep experience, industries specialization and global reach.
-          Human Resource systems processes align to their business requirements idea of denouncing pleasure and praising pain was born and We work closely with Employers across all industry sectors to ensure that their internal sed Human Resource systems processes align to their business requirements idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. Take a 360-degree view of yours situations using our seds deep experience, industries specialization and global reach.
-          Human Resource systems processes align to their business requirements idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. Take a 360-degree view of yours situatio I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. Take a 360-degree view of yours situatio"
+      <NavBar />
+      <IntroSlider
+        HeadText="Consultancy"
+        Quote="We Provide The Best Consultancy For Your Business"
+        className="Consultancy__Intro"
       />
-    </div>
-    <Footer />
-  </main>
-  )
-}
+      <div className="Consultancy__Card">
+        <OurServicesCard
+          ServiceTitle="Consultancy"
+          ServicesDesctiption="Board and CEOs are dealing with challengesof globalization, audit, risk management, human resource compliance, regulatory serenity and shareholders activism.  Companies are seeking Leaders to drive transformation and success with the true strength in strategy and multicultural sensitivity and the charisma to motivate their employees.  Leadership assessment 
+        is a core service at NESAT Agency. As such, we provide consultancy in the following: "
+        />
+        <ul className="Consultancy__List">
+          <li id="TextContent--Paragraph">
+            {" "}
+            Payrollvalidation for our clients{" "}
+          </li>
+          <li id="TextContent--Paragraph">
+            {" "}
+            Prepare, review, and update Job description to match your company
+            strategy{" "}
+          </li>
+          <li id="TextContent--Paragraph">
+            {" "}
+            Provide guidance for Human Resource Audit preparation for our
+            clients{" "}
+          </li>
+          <li id="TextContent--Paragraph">
+            {" "}
+            Prepare world class resume for our clients{" "}
+          </li>
+          <li id="TextContent--Paragraph">
+            {" "}
+            Facilitate your training and workshops{" "}
+          </li>
+        </ul>
+      </div>
+      <Footer />
+    </main>
+  );
+};
 
-export default Consultancy
+export default Consultancy;

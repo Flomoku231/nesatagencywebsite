@@ -13,7 +13,7 @@ const LandingPageTeam = () => {
 
   useEffect(() => {
     async function fetchTeamMembers() {
-      const req = await axios.get('/home/team/members');
+      const req = await axios.get('/api/home/team/members');
       setTeamMembers(req.data);
     }
     fetchTeamMembers();

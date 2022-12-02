@@ -2,19 +2,23 @@
 
 .MenuBar__Container{
     width: 250px;
-    height: 400px;
+    max-height: 600px;
     position: fixed;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 60px 0px;
     right: 0px;
     top: 70px;
     box-shadow: $primary--shadow;
-    background-color: $primary--text-color;
+    background-color: $brand-color;
 }
 .HideMenuList{
     display: none;
 }
 .ShowMenuList{
     display: block;
+    display: flex; 
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
     width: 100%;
     list-style-type: none;
 

@@ -12,7 +12,7 @@ const Testimonial = () => {
 
   useEffect(() => {
     async function fetchTestimonia() {
-      const req = await axios.get("/home/testimonial");
+      const req = await axios.get("/api/home/testimonial");
       setTestimonies(req.data);
     }
     fetchTestimonia();

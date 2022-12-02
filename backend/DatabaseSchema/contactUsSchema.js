@@ -10,7 +10,7 @@ const contactUsSchema = new mongoose.Schema({
         lowercase: true,
         required: true
     },
-    message: String
+    Sendermessage: String
 }, {timestamps: true})
 
 export default mongoose.model('contactForm', contactUsSchema)

@@ -67,6 +67,11 @@
     }
     
 }
+.TextContent__List{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .Details__Choose{
     width: 90%;
     margin-top: 50px !important;
@@ -77,7 +82,7 @@
     justify-content: space-evenly;
 
     .Choose--text{
-        width: 100%;
+        width: 85%;
     }
 
     #TextContent--BoldText{
