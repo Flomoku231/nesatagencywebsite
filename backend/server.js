@@ -100,9 +100,9 @@ app.post('/api/contactUs/form', function(req, res){
             try {
                 // Send Email Logic
                 const subject = "Appreciation" 
-                const message = `<h2>Hi ${name}!</h2> <p>Thanks for
+                const message = `<h2> Hi ${name}!</h2> <p>Thanks for
                 contacting us. We have received your message and promise to contact you shortly</P>
-                <h3>Nesat Team</h3>`
+                <h3>Nesat Team</h3> `
                 const sendTo = email
                 const sendFrom = process.env.NESATemail
                 const ReplyTo = email
@@ -110,15 +110,15 @@ app.post('/api/contactUs/form', function(req, res){
                 sendEmail(subject, message, sendTo, sendFrom, ReplyTo)
 
 
-                // Received Information in EMail Logic
+                //Received Information in EMail Logic
                 const Heading = "Email Request" 
-                const Sendmessage = `<h2>Hi Nesat Team!</h2> <p>You have a new Email from ${name} see details below: </p>
+                const Sendmessage = `<h2> Hi Nesat Team!</h2> <p>You have a new Email from ${name} see details below: </p>
                 <ul>
                     <li>Name: ${name}</li>
                     <li>Email: ${email}</li>
                     <li>Message: ${Sendermessage}</li>
                 </ul>
-                <h3>Nesat Team</h3>`
+                <h3>Nesat Team</h3> `
                 const sendTO = process.env.RECEIVERemail
                 const sendFROM = process.env.NESATemail
                 const ReplyTO = process.env.RECEIVERemail
